@@ -73,10 +73,20 @@ Each number has at most $4$ significant bits, so removing $4$ least significant 
 **Language:** Python  
 **Runtime:** N/A  
 **Memory:** N/A  
-**Submitted:** 2026-09-07T14:54:02.649Z  
+**Submitted:** 2026-09-07T14:54:11.360Z  
 
 ```py
 # cook your dish here
+# Read input
+N = int(input())
+A = list(map(int, input().split()))
+M = int(input())
+
+# Remove M least significant bits from each element
+result = [a >> M for a in A]
+
+# Print the resulting array
+print(*result)
 
 ```
 
