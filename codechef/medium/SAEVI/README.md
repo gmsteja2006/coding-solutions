@@ -83,10 +83,22 @@ Therefore, the required sum is `0`.
 **Language:** Python  
 **Runtime:** N/A  
 **Memory:** N/A  
-**Submitted:** 2026-09-07T14:53:19.642Z  
+**Submitted:** 2026-09-07T14:53:32.887Z  
 
 ```py
 # cook your dish here
+# Read input values
+N, K = map(int, input().split())
+A = list(map(int, input().split()))
+
+# Threshold value
+threshold = 2 * K
+
+# Sum elements at even indices greater than threshold
+result = sum(A[i] for i in range(0, N, 2) if A[i] > threshold)
+
+# Print result
+print(result)
 
 ```
 
