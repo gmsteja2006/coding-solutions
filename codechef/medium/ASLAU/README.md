@@ -71,10 +71,21 @@ Since $550 < 600$, the answer is `NO`
 **Language:** Python  
 **Runtime:** N/A  
 **Memory:** N/A  
-**Submitted:** 2026-09-07T14:51:32.696Z  
+**Submitted:** 2026-09-07T14:51:59.280Z  
 
 ```py
 # cook your dish here
+# Read input values
+A, B, X = map(int, input().split())
+
+# Calculate combined score
+total = A + B
+
+# Check if Astra passes
+if total >= X:
+    print("YES")
+else:
+    print("NO")
 
 ```
 
