@@ -54,19 +54,10 @@ Hence, persons $1$ and $3$ share a row in this instance, so there are $2$ people
 **Language:** Python  
 **Runtime:** N/A  
 **Memory:** N/A  
-**Submitted:** 2026-09-16T15:42:36.251Z  
+**Submitted:** 2026-09-16T15:41:56.878Z  
 
 ```py
 # cook your dish here
-# Bus Seating Problem
-
-T = int(input())  # number of test cases
-
-for _ in range(T):
-    N, K = map(int, input().split())
-    # People sitting next to someone = extra beyond N
-    result = max(0, K - N)
-    print(result)
 
 ```
 
