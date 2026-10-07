@@ -67,10 +67,18 @@ The die has $4$ faces, numbered $3, 6, 9, 12$. Since $15$ is not one of these fa
 **Language:** Python  
 **Runtime:** N/A  
 **Memory:** N/A  
-**Submitted:** 2026-10-07T15:20:47.310Z  
+**Submitted:** 2026-10-07T15:21:31.328Z  
 
 ```py
 # cook your dish here
+# Read input values
+X, K, Y = map(int, input().split())
+
+# Check if Y is a valid face of the die
+if Y % K == 0 and 1 <= Y // K <= X:
+    print("YES")
+else:
+    print("NO")
 
 ```
 
