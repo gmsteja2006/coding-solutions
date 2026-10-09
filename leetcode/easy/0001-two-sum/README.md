@@ -53,9 +53,9 @@ Output: [0,1]
 ## Solution
 
 **Language:** Python  
-**Runtime:** 2164 ms (beats 17.98%)  
-**Memory:** 13.2 MB (beats 38.77%)  
-**Submitted:** 2026-10-07T08:56:41.105Z  
+**Runtime:** 2143 ms (beats 27.19%)  
+**Memory:** 13.3 MB (beats 38.77%)  
+**Submitted:** 2026-10-09T05:22:27.580Z  
 
 ```py
 class Solution(object):
@@ -69,6 +69,7 @@ class Solution(object):
             for j in range(i+1,len(nums)):
                 if nums[i]+nums[j]==target:
                     return i,j
+        
 ```
 
 ---
